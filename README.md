@@ -48,3 +48,8 @@ Then I wondered if the pattern of weekdays would repeat any sooner than after 48
 thats what pattern.py aims to find out.
 
 There's plenty of comment in the file, in Dutch ....
+
+# Inspriration
+
+For those of you with an NRC subscription:
+https://www.nrc.nl/nieuws/2022/05/13/vrijdag-de-13de-a4124263
