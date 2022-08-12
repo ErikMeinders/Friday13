@@ -1,5 +1,5 @@
-# Friday13
-How often is the 13th of a month on a Friday and is that more often than any other day.
+# Friday 13
+How often is the 13th of a month on a Friday? And is that more often than any other day of the week?
 
 # The question
 
@@ -44,12 +44,13 @@ So, by a small margin, the 13th day of any month is most likely to be a Friday!
 
 Happy Fridays.
 
+# is 400 years really the minimum?
+
 Then I wondered if the pattern of weekdays would repeat any sooner than after 4800 months, 
 thats what pattern.py aims to find out.
 
 There's plenty of comment in the file, in Dutch ....
 
-# Inspriration
+# Inspiration
 
-For those of you with an NRC subscription:
-https://www.nrc.nl/nieuws/2022/05/13/vrijdag-de-13de-a4124263
+For those of you with an NRC subscription: https://www.nrc.nl/nieuws/2022/05/13/vrijdag-de-13de-a4124263
