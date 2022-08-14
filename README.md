@@ -16,13 +16,14 @@ dagen.py outputs the weekday of the 13th day of any month in a 400 year period (
 The program starts in a configurable year and does the math.
 
 The reason to take 400 years in consideration is related to the leap-year rules.
-The periodicity is 400 years:
+The periodicity is 400 years (since 1752):
 
 February has 29 days:
 
 - when the year divides by 4 (1924 is a leap year)
 - except when the year is a multiple of 100 (1700, 1800 and 1900 were not leap years)
 - except except when the year is a multiple of 400 (2000 is a leap year)
+- the identical 1800 and 2200 calendars
 
 # turf
 
@@ -47,9 +48,11 @@ Happy Fridays.
 # is 400 years really the minimum?
 
 Then I wondered if the pattern of weekdays would repeat any sooner than after 4800 months, 
-thats what pattern.py aims to find out.
+thats what leapeat.py aims to find out.
 
-There's plenty of comment in the file, in Dutch ....
+It uses a module in this repo named find_repeat
+
+find_repeat_test.py is a standalone test-script for the find_repeat module.
 
 # Inspiration
 

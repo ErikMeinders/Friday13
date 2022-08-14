@@ -9,16 +9,13 @@ from datetime import date
 
 # some settings
 
-MAANDDAG = 13
-STARTJAAR=1622
+DAY_OF_MONTH = 13
+STARTYEAR=1822
 
 ## main code
 
-dagen = [] # maakt een leeg array genaamd dagen
+days = [] # maakt een leeg array genaamd days
 
-# range(van, tot) --> let op, niet (van, totenmet)!!
-# vul het dagen array met de weekdag voor de 13e van iedere maand voor een periode van 800 jaar
-
-for jaar in range(0, 400):
-    for maand in range (1, 13):
-        print(date(STARTJAAR + jaar , maand, MAANDDAG).ctime())
+for year in range(0, 400):
+    for month in range (1, 13):
+        print(date(STARTYEAR + year , month, DAY_OF_MONTH).ctime())
