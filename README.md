@@ -3,8 +3,9 @@ How often is the 13th of a month on a Friday? And is that more often than any ot
 
 # The question
 
-In my (Dutch) newspaper on some Friday 13th I read an article on the likelyhood of a 13th of a month to be Friday.
+In my (Dutch) newspaper on some Friday 13th, I read an article on the likelyhood of a 13th of a month to be Friday.
 It stated Friday was actually the most likely day for any 13th of the month - which puzzled me.
+I would think that in the grand scheme of things, all days are equal ...
 It triggered me to write a quick python program to verify this statement.
 
 # dagen
@@ -20,7 +21,7 @@ The periodicity is 400 years (since 1752):
 
 February has 29 days:
 
-- when the year divides by 4 (1924 is a leap year)
+- when the year is a multiple of 4 (1924 is a leap year)
 - except when the year is a multiple of 100 (1700, 1800 and 1900 were not leap years)
 - except except when the year is a multiple of 400 (2000 is a leap year)
 - the identical 1800 and 2200 calendars
@@ -41,7 +42,7 @@ Sun :      687
 
 This is regardless the start-year always the same.
 
-So, by a small margin, the 13th day of any month is most likely to be a Friday!
+So, in the long run and by a small margin, the 13th day of any month is most likely to be a Friday!
 
 Happy Fridays.
 
@@ -50,7 +51,9 @@ Happy Fridays.
 Then I wondered if the pattern of weekdays would repeat any sooner than after 4800 months, 
 thats what leapeat.py aims to find out.
 
-It uses a module in this repo named find_repeat
+It uses a module in this repo named find_repeat.
+
+find_repeat finds the shortest continuously repeating pattern in a list
 
 find_repeat_test.py is a standalone test-script for the find_repeat module.
 
