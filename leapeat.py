@@ -1,4 +1,4 @@
-#! /usr/bin/env python3.9
+#! /usr/bin/env python3
 """
 Does the day of the week for a fixed day of the month pattern repeat before 400 years?
 

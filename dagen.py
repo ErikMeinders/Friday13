@@ -1,4 +1,4 @@
-#! /usr/bin/env python3.9
+#! /usr/bin/env python3
 
 """
 quick hack to find distribution of the 13th day of the month over the weekdys
