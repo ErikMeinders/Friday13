@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+README_PACKAGE.md
+pyproject.toml
+setup.cfg
+setup.py
+find_repeat/__init__.py
+find_repeat/find_repeat.py
+find_repeat/version.py
+find_repeat.egg-info/PKG-INFO
+find_repeat.egg-info/SOURCES.txt
+find_repeat.egg-info/dependency_links.txt
+find_repeat.egg-info/top_level.txt
+tests/test_find_repeat.py
