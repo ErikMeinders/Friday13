@@ -14,7 +14,7 @@ The scripts in this repository contain a shebang so they can be executed
 directly from the command line.  Set the executable bit once with
 
 ```bash
-chmod +x weekday.py tally.py leapeat.py find_repeat_test.py
+chmod +x weekday.py tally.py leapeat.py
 ```
 
 After that you can invoke the tools like normal commands.
@@ -68,11 +68,11 @@ Happy Fridays.
 Then I wondered if the pattern of weekdays would repeat any sooner than after 4800 months, 
 thats what leapeat.py aims to find out.
 
-It uses a module in this repo named find_repeat.
+It uses a module in this repo named `find_repeat`.
 
-find_repeat finds the shortest continuously repeating pattern in a list
-
-find_repeat_test.py is a standalone test-script for the find_repeat module.
+`find_repeat` finds the shortest continuously repeating pattern in a list.
+Unit tests for this module live in the `tests` directory and can be run with
+`python -m unittest discover -s tests`.
 
 # Inspiration
 
