@@ -8,11 +8,10 @@ It stated Friday was actually the most likely day for any 13th of the month - wh
 I would think that in the grand scheme of things, all days are equal ...
 It triggered me to write a quick python program to verify this statement.
 
-# dagen
+# weekday
 
-dagen.py (dagen is Dutch for days)
-
-dagen.py outputs the weekday of the 13th day of any month in a 400 year period (400*12 = 4800 days).
+`weekday.py` prints the weekday of the 13th day of every month in a
+400‑year period (400*12 = 4800 months).
 
 The program starts in a configurable year and does the math.
 
@@ -26,9 +25,10 @@ February has 29 days:
 - except except when the year is a multiple of 400 (2000 is a leap year)
 - the identical 1800 and 2200 calendars
 
-# turf
+# tally
 
-A quick script (turf is Dutch for tally) runs the python code 7 times (one for each day) and count the occurences of all day-names (I know, bad code).
+`tally.py` reads the output of `weekday.py` and counts how often each weekday occurs.
+Use it as: `./weekday.py | ./tally.py`
 
 Counting the weekdays of the 13th day of the 4800 months gives:
 

@@ -1,7 +1,0 @@
-#! /usr/bin/env bash
-
-for dag in Mon Tue Wed Thu Fri Sat Sun
-do
-  /bin/echo -n "${dag} : "
-  ./dagen.py | grep "^${dag} " | wc -l
-done
