@@ -8,12 +8,29 @@ It stated Friday was actually the most likely day for any 13th of the month - wh
 I would think that in the grand scheme of things, all days are equal ...
 It triggered me to write a quick python program to verify this statement.
 
+## Usage
+
+The scripts in this repository contain a shebang so they can be executed
+directly from the command line.  Set the executable bit once with
+
+```bash
+chmod +x weekday.py tally.py leapeat.py find_repeat_test.py
+```
+
+After that you can invoke the tools like normal commands.
+
 # weekday
 
-`weekday.py` prints the weekday of the 13th day of every month in a
-400‑year period (400*12 = 4800 months).
+`weekday.py` prints the weekday of the 13th day of every month.  By default it
+shows a span of 400 years (400×12 = 4800 months), but you can override both the
+start year and the amount of years to inspect with command line flags.
 
-The program starts in a configurable year and does the math.
+```bash
+./weekday.py --start 2025 --years 75
+```
+
+The example above lists the weekdays for the 13th day of every month for the
+next 75 years.
 
 The reason to take 400 years in consideration is related to the leap-year rules.
 The periodicity is 400 years (since 1752):
@@ -28,7 +45,7 @@ February has 29 days:
 # tally
 
 `tally.py` reads the output of `weekday.py` and counts how often each weekday occurs.
-Use it as: `./weekday.py | ./tally.py`
+Use it as: `./weekday.py [--start YEAR] [--years NUM] | ./tally.py`
 
 Counting the weekdays of the 13th day of the 4800 months gives:
 
